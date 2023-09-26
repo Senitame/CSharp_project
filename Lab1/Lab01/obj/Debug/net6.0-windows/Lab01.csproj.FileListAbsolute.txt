@@ -1,0 +1,16 @@
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\bin\Debug\net6.0-windows\Lab01.exe
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\bin\Debug\net6.0-windows\Lab01.deps.json
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\bin\Debug\net6.0-windows\Lab01.runtimeconfig.json
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\bin\Debug\net6.0-windows\Lab01.dll
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\bin\Debug\net6.0-windows\Lab01.pdb
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.csproj.GenerateResource.cache
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.GeneratedMSBuildEditorConfig.editorconfig
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.AssemblyInfoInputs.cache
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.AssemblyInfo.cs
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.csproj.CoreCompileInputs.cache
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.dll
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\refint\Lab01.dll
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.pdb
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.genruntimeconfig.cache
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\ref\Lab01.dll
+D:\Отчеты, домашки\Nikita\LabWork01\Lab01\obj\Debug\net6.0-windows\Lab01.Form1.resources
