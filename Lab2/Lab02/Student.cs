@@ -39,6 +39,8 @@
         public string ToStringStudentTeacher()
         {
             string data = "Student: " + StLastName + " " + StFirstName + Environment.NewLine;
+            data += "Teacher: " + TLastName + " " + TFirstName + Environment.NewLine;
+            data += Environment.NewLine;
             return data;
         }
         public string ToStringBusStudent()
@@ -49,6 +51,21 @@
         public string ToStringGradeStudent()
         {
             string data = "Student: " + StLastName + " " + StFirstName + Environment.NewLine;
+            return data;
+        }
+        public string ToStringClassStudent()
+        {
+            string data = "Student: " + StLastName + " " + StFirstName + Environment.NewLine;
+            return data;
+        }
+        public string ToStringClassTaecher()
+        {
+            string data = "Teacher: " + TLastName + " " + TFirstName + Environment.NewLine;
+            return data;
+        }
+        public string ToStringGradeTaecher()
+        {
+            string data = "Teacher: " + TLastName + " " + TFirstName + Environment.NewLine;
             return data;
         }
     }
