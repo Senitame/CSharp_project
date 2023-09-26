@@ -1,9 +1,11 @@
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace Lab02
 {
     public partial class Form1 : Form
     {
+        private Stopwatch taskStopwatch = new Stopwatch();
         private List<Student> _list;
 
         public Form1()
@@ -74,6 +76,7 @@ namespace Lab02
         {
             richTextBoxResult.Text = "";
 
+            taskStopwatch.Restart();
             foreach (var item in _list)
             {
                 var stSurname = tbLastName1.Text.Trim();
@@ -83,11 +86,15 @@ namespace Lab02
                     break;
                 }
             }
+            taskStopwatch.Stop();
+            toolStripTextBoxTimer.Text = "Задание 1: " + taskStopwatch.ElapsedMilliseconds + " мс";
         }
 
         private void buttonTask2_Click(object sender, EventArgs e)
         {
             richTextBoxResult.Text = "";
+
+            taskStopwatch.Restart();
             foreach (var item in _list)
             {
                 var stSurname = tbLastName2.Text.Trim();
@@ -97,12 +104,15 @@ namespace Lab02
                     break;
                 }
             }
+            taskStopwatch.Stop();
+            toolStripTextBoxTimer.Text = "Задание 2: " + taskStopwatch.ElapsedMilliseconds + " мс";
         }
 
         private void buttonTask3_Click(object sender, EventArgs e)
         {
             richTextBoxResult.Text = "";
 
+            taskStopwatch.Restart();
             foreach (var item in _list)
             {
                 var tSurname = tbTeacherLastName.Text.Trim();
@@ -111,6 +121,8 @@ namespace Lab02
                     richTextBoxResult.Text += item.ToStringStudentTeacher();
                 }
             }
+            taskStopwatch.Stop();
+            toolStripTextBoxTimer.Text = "Задание 3: " + taskStopwatch.ElapsedMilliseconds + " мс";
         }
 
         private void buttonTask4_Click(object sender, EventArgs e)
@@ -124,10 +136,13 @@ namespace Lab02
             .GroupBy(item => $"{item.StFirstName} {item.StLastName}")
             .Select(group => group.First());
 
+            taskStopwatch.Restart();
             foreach (var item in uniqueStudents)
             {
                 richTextBoxResult.Text += item.ToStringBusStudent();
             }
+            taskStopwatch.Stop();
+            toolStripTextBoxTimer.Text = "Задание 4: " + taskStopwatch.ElapsedMilliseconds + " мс";
         }
 
         private void buttonTask5_Click(object sender, EventArgs e)
@@ -141,11 +156,13 @@ namespace Lab02
             .GroupBy(item => $"{item.StFirstName} {item.StLastName}")
             .Select(group => group.First());
 
-
+            taskStopwatch.Restart();
             foreach (var item in uniqueStudents)
             {
                 richTextBoxResult.Text += item.ToStringGradeStudent();
             }
+            taskStopwatch.Stop();
+            toolStripTextBoxTimer.Text = "Задание 5: " + taskStopwatch.ElapsedMilliseconds + " мс";
         }
 
         private void buttonTask6_Click(object sender, EventArgs e)
@@ -159,11 +176,13 @@ namespace Lab02
             .GroupBy(item => $"{item.StFirstName} {item.StLastName}")
             .Select(group => group.First());
 
-
+            taskStopwatch.Restart();
             foreach (var item in uniqueStudents)
             {
                 richTextBoxResult.Text += item.ToStringClassStudent();
             }
+            taskStopwatch.Stop();
+            toolStripTextBoxTimer.Text = "Задание 6: " + taskStopwatch.ElapsedMilliseconds + " мс";
         }
 
         private void buttonTask7_Click(object sender, EventArgs e)
@@ -177,11 +196,13 @@ namespace Lab02
             .GroupBy(item => $"{item.TFirstName} {item.TLastName}")
             .Select(group => group.First());
 
-
+            taskStopwatch.Restart();
             foreach (var item in uniqueTaechers)
             {
                 richTextBoxResult.Text += item.ToStringClassTaecher();
             }
+            taskStopwatch.Stop();
+            toolStripTextBoxTimer.Text = "Задание 7: " + taskStopwatch.ElapsedMilliseconds + " мс";
         }
 
         private void buttonTask8_Click(object sender, EventArgs e)
@@ -195,12 +216,13 @@ namespace Lab02
             .GroupBy(item => $"{item.TFirstName} {item.TLastName}")
             .Select(group => group.First());
 
-
+            taskStopwatch.Restart();
             foreach (var item in uniqueStudents)
             {
                 richTextBoxResult.Text += item.ToStringGradeTaecher();
             }
-
+            taskStopwatch.Stop();
+            toolStripTextBoxTimer.Text = "Задание 8: " + taskStopwatch.ElapsedMilliseconds + " мс";
         }
     }
 }

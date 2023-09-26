@@ -35,6 +35,7 @@ namespace Lab02
             menuStrip1 = new MenuStrip();
             ToolStripMenuItem = new ToolStripMenuItem();
             loadToolStripMenuItem = new ToolStripMenuItem();
+            toolStripTextBoxTimer = new ToolStripTextBox();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
@@ -82,10 +83,10 @@ namespace Lab02
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { ToolStripMenuItem, toolStripTextBoxTimer });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(970, 28);
+            menuStrip1.Size = new Size(970, 29);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -93,7 +94,7 @@ namespace Lab02
             // 
             ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { loadToolStripMenuItem });
             ToolStripMenuItem.Name = "ToolStripMenuItem";
-            ToolStripMenuItem.Size = new Size(59, 24);
+            ToolStripMenuItem.Size = new Size(59, 25);
             ToolStripMenuItem.Text = "Файл";
             // 
             // loadToolStripMenuItem
@@ -103,6 +104,17 @@ namespace Lab02
             loadToolStripMenuItem.Size = new Size(212, 26);
             loadToolStripMenuItem.Text = "Загрузить";
             loadToolStripMenuItem.Click += loadToolStripMenuItem_Click;
+            // 
+            // toolStripTextBoxTimer
+            // 
+            toolStripTextBoxTimer.BackColor = Color.Salmon;
+            toolStripTextBoxTimer.Enabled = false;
+            toolStripTextBoxTimer.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripTextBoxTimer.ForeColor = SystemColors.InactiveBorder;
+            toolStripTextBoxTimer.Name = "toolStripTextBoxTimer";
+            toolStripTextBoxTimer.Size = new Size(150, 25);
+            toolStripTextBoxTimer.Text = "Время выполнения";
+            toolStripTextBoxTimer.TextBoxTextAlign = HorizontalAlignment.Center;
             // 
             // statusStrip1
             // 
@@ -129,9 +141,9 @@ namespace Lab02
             // richTextBoxResult
             // 
             richTextBoxResult.Dock = DockStyle.Right;
-            richTextBoxResult.Location = new Point(542, 28);
+            richTextBoxResult.Location = new Point(542, 29);
             richTextBoxResult.Name = "richTextBoxResult";
-            richTextBoxResult.Size = new Size(428, 772);
+            richTextBoxResult.Size = new Size(428, 771);
             richTextBoxResult.TabIndex = 2;
             richTextBoxResult.Text = "Hello, world!";
             // 
@@ -511,5 +523,6 @@ namespace Lab02
         private Button buttonTask8;
         private TextBox tbRating;
         private Label label7;
+        private ToolStripTextBox toolStripTextBoxTimer;
     }
 }
